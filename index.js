@@ -121,8 +121,9 @@ Use the getFlavorByIndex function below to do the following:
 */
 
 function getFlavorByIndex(anArray, indexNumber){
-    
-    anArray.slice(indexNumber,1);
+    let returnItem = anArray.slice(indexNumber,indexNumber+1);
+
+    return returnItem.toString();
 }
 
 
