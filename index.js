@@ -63,6 +63,10 @@ Confirm that an array is exactly 31 flavors. Your function should accept:
 For Example: is31Flavors(originalFlavors) will return true if your code is working properly
 */
 
+
+//check out later..
+
+
 function is31Flavors(anArray){
     if(anArray.length=32){
         return true;
@@ -141,10 +145,13 @@ Use the removeFlavorByName function below to do the following:
     HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-    /*your code here*/
+function removeFlavorByName(anArray, flavorName){
+    for(let i=0; i<anArray.length;i++){
+        if(anArray[i]===flavorName){
+            anArray.splice(i,1);
+        }
+    }return anArray;
 }
-
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
